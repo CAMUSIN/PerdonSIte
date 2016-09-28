@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular.min.js"></script>
+    <script src="perdon.js"></script>
+  </head>
+  <body ng-app="SorrySite">
+    <div class="">
+      <div class="">
+        <form name="myForm" ng-controller="SorrySiteController">
+          <label>
+            <input type="radio" ng-model="respuesta.name" value="Sí">
+            Sí
+          </label><br/>
+          <label>
+            <input type="radio" ng-model="respuesta.name" value="No">
+            No
+          </label><br/>
+          <label>
+            <input type="radio" ng-model="respuesta.name" value="Talvez">
+            Talvez
+          </label><br/>
+          <tt>Tu respuesta es = {{ respuesta.name }}</tt><br/>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>
